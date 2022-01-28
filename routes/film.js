@@ -34,6 +34,7 @@ router.get('/', async(req, res) => {
 
     res.status(200).json(result);
   } catch(err) {
+    console.log('err herre', err);
     res.status(500).json({
       message: 'Sever Error',
       isSuccess: false
